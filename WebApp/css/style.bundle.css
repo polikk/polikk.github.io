@@ -1283,8 +1283,7 @@ body {
         font-size: 15px;
         color: white; }
       body #portFolio .work-card .info:hover {
-        opacity: 1;
-        padding: 50px; }
+        opacity: 1; }
   body #portFolio .portfoLio {
     width: 100%; }
   body #portFolio h2 {
