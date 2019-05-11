@@ -1114,7 +1114,7 @@ html {
     align-self: stretch !important; } }
 
 @font-face {
-  font-family: 'Roboto regular';
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   src: url(../fonts/Roboto-Regular.ttf); }
@@ -1126,146 +1126,166 @@ html {
   src: url(../fonts/Roboto-Light.ttf); }
 
 body {
-  scroll-behavior: smooth;
-  padding: 0;
-  margin: 0; }
-  body #heaDer {
-    background: url(../img/BackgroundFirst.png), no-repeat;
-    padding-top: 200px;
+  margin: 0;
+  padding: 0; }
+
+.about-title .title-headline {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  text-align: center;
+  color: black;
+  line-height: 0.675;
+  font-family: 'Roboto regular';
+  text-transform: uppercase;
+  text-align: center; }
+
+.about-title .title-headtext {
+  font-family: 'Roboto regular';
+  text-transform: uppercase;
+  font-size: 15px;
+  text-align: center;
+  color: #E6B10A; }
+
+#title {
+  padding-top: 250px;
+  background: #89898b; }
+  #title .title-head {
     text-align: center; }
-    body #heaDer h5 {
-      font-weight: 100;
-      font-size: 15px;
-      font-family: 'Roboto regular';
-      color: white;
-      text-transform: uppercase;
-      margin-top: 40px; }
-    body #heaDer h1 {
-      font-style: normal;
-      font-size: 40px;
-      font-family: 'Roboto light';
-      color: #ffe600;
-      line-height: 0.675;
-      font-weight: 100; }
-    body #heaDer .firtsBut {
-      background-color: #89898b;
-      border-style: solid;
-      border-width: 1px;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      padding-left: 85px;
-      padding-right: 85px;
-      border-color: #ffe600;
-      color: aliceblue;
-      margin-top: 110px; }
-      body #heaDer .firtsBut:hover {
-        border-width: 1px;
-        border-color: #89898b;
-        background-color: #E6B10A;
-        transition: 3s; }
-    body #heaDer .toNext {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      background-color: #89898b;
-      border: none;
-      margin-top: 50px;
-      margin-bottom: 100px; }
-      body #heaDer .toNext:hover {
-        -webkit-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-        transform: scale(1.2); }
-  body #aboutUs .naviGate {
-    border-bottom: 1px solid #E6B10A; }
-  body #aboutUs .logo {
-    min-height: 100px; }
-  body #aboutUs .myNav {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 40px;
-    padding-bottom: 40px; }
-    body #aboutUs .myNav .navMenu {
-      color: #89898b;
-      text-decoration: none;
-      font-weight: 100;
-      font-size: 15px;
-      font-family: 'Roboto regular';
-      text-transform: uppercase; }
-      body #aboutUs .myNav .navMenu:hover {
-        color: #E6B10A;
-        transform: 2s; }
-  body #aboutUs h1 {
-    font-style: normal;
-    padding-top: 70px;
-    font-size: 25px;
-    text-align: center;
-    color: black;
-    line-height: 0.675;
+  #title .title-web {
     font-weight: 100;
-    font-family: 'Roboto regular';
-    text-transform: uppercase; }
-  body #aboutUs h4 {
-    font-family: 'Roboto regular';
-    text-transform: uppercase;
-    font-size: 15px;
-    text-align: center;
-    color: #E6B10A;
-    line-height: 1.8;
-    margin-bottom: 130px; }
-  body #aboutUs h3 {
-    color: #E6B10A;
-    display: inline-block;
-    border-right: 1px solid #E6B10A;
-    padding: 5px;
-    padding-right: 10px;
-    margin: 10 10px;
-    text-transform: uppercase;
-    margin-right: 20px;
-    font-size: 25px;
-    font-family: 'Roboto regular';
-    font-weight: 400; }
-  body #aboutUs p {
-    display: inline;
-    text-transform: uppercase;
     font-size: 15px;
     font-family: 'Roboto regular';
-    color: #131316;
-    line-height: 1.8;
-    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 40px;
     text-align: center; }
-  body #aboutUs span {
+  #title .title-sub {
+    text-align: center;
+    font-style: normal;
+    font-size: 40px;
+    font-family: 'Roboto light';
+    color: #E6B10A;
+    font-weight: 100; }
+  #title .title-but {
+    background-color: #89898b;
+    border-style: solid;
+    border-width: 1px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 85px;
+    padding-right: 85px;
+    border-color: #ffe600;
+    color: aliceblue;
+    margin-top: 70px; }
+    #title .title-but:hover {
+      border-width: 1px;
+      border-color: #89898b;
+      background-color: #E6B10A;
+      transition: 3s; }
+  #title .title-next {
     display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #89898b;
+    border: none;
+    margin-top: 30px;
+    margin-bottom: 250px; }
+    #title .title-next:hover {
+      -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2); }
+
+#about {
+  padding-bottom: 100px; }
+  #about .nav-menu {
+    border-bottom: 2px solid #E6B10A; }
+    #about .nav-menu .logo {
+      display: flex;
+      align-items: center;
+      min-height: 100px; }
+      #about .nav-menu .logo .logo-img {
+        max-width: 100%; }
+    #about .nav-menu .navigation {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 40px;
+      padding-bottom: 50px; }
+      #about .nav-menu .navigation .navMenu {
+        color: #89898b;
+        text-decoration: none;
+        font-weight: 100;
+        font-size: 15px;
+        font-family: 'Roboto regular';
+        text-transform: uppercase; }
+        #about .nav-menu .navigation .navMenu:hover {
+          transform: 2s;
+          color: #E6B10A; }
+  #about .about-title {
+    margin-top: 120px;
+    margin-bottom: 120px; }
+  #about .card-about .card-text {
     letter-spacing: 1px;
     font-size: 15px;
     font-family: 'Roboto regular';
     color: #8e8e8e;
     line-height: 1.8;
-    text-align: center;
-    margin-bottom: 130px; }
-  body #quote {
-    text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    background-color: #E6B10A; }
-    body #quote h1 {
-      font-size: 25px;
-      font-style: italic;
-      color: #131316;
-      font-family: 'Roboto light'; }
-    body #quote span {
+    text-align: left; }
+  #about .card-about .card-title {
+    display: flex;
+    align-items: center; }
+    #about .card-about .card-title .card-subtitle {
+      text-transform: uppercase;
       font-size: 15px;
       font-family: 'Roboto regular';
-      color: white;
+      color: #131316;
       line-height: 1.8;
-      font-style: normal; }
-  body #portFolio .work-card {
+      font-weight: 600; }
+    #about .card-about .card-title .card-number {
+      color: #E6B10A;
+      border-right: 1px solid #E6B10A;
+      padding: 5px;
+      padding-right: 10px;
+      text-transform: uppercase;
+      margin-right: 20px;
+      font-size: 25px;
+      font-family: 'Roboto regular';
+      font-weight: 400; }
+
+#quote {
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: #E6B10A; }
+  #quote .qoute-title {
+    font-size: 25px;
+    font-style: italic;
+    color: #131316;
+    font-family: 'Roboto light';
+    line-height: 40px;
+    letter-spacing: 1.25px;
+    text-align: center; }
+  #quote .qoute-text {
+    font-size: 15px;
+    font-family: 'Roboto regular';
+    color: white;
+    line-height: 1.8;
+    letter-spacing: -0.38px;
+    text-transform: uppercase;
+    font-size: 15px; }
+
+#portfolio {
+  padding-top: 120px; }
+  #portfolio .about-title {
+    margin-bottom: 120px; }
+  #portfolio .work-card {
     position: relative;
     margin-bottom: 20px;
     font-family: 'Roboto regular';
     text-transform: uppercase;
     font-size: 20px;
     color: black; }
-    body #portFolio .work-card .info {
+    #portfolio .work-card .info {
       position: absolute;
       top: 0;
       left: 0;
@@ -1276,164 +1296,149 @@ body {
       height: 100%;
       background-color: #E6B10A;
       opacity: 0;
-      transition: all ease-in-out .5s; }
-      body #portFolio .work-card .info .titleText {
+      transition: all ease-in-out .5s;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #portfolio .work-card .info .titleText {
         font-family: 'Roboto regular';
         text-transform: uppercase;
         font-size: 15px;
         color: white; }
-      body #portFolio .work-card .info:hover {
+      #portfolio .work-card .info:hover {
         opacity: 1; }
-  body #portFolio .portfoLio {
+  #portfolio .portfoLio {
     width: 100%; }
-  body #portFolio h2 {
-    font-family: 'Roboto regular';
+  #portfolio .toNextPage {
     text-align: center;
-    text-transform: uppercase;
-    color: #131316;
-    padding-top: 70px;
-    font-size: 25px; }
-  body #portFolio p {
-    font-family: 'Roboto regular';
-    text-align: center;
-    text-transform: uppercase;
-    color: #E6B10A;
-    font-size: 15px; }
-  body #portFolio .toNextPage {
-    text-align: center;
-    padding-bottom: 70px; }
-    body #portFolio .toNextPage .loadMore .loadMorePicture {
-      width: 40px;
-      height: 20px; }
-      body #portFolio .toNextPage .loadMore .loadMorePicture:hover {
-        -webkit-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-        transform: scale(1.2); }
-  body #cliense {
-    background: #424245; }
-    body #cliense .client.Up {
-      font-family: 'Roboto regular';
-      justify-content: center;
-      text-transform: uppercase;
-      color: white;
-      padding-top: 100px;
-      font-size: 25px;
-      padding-bottom: 0; }
-    body #cliense .client.UpText {
+    margin-bottom: 70px; }
+    #portfolio .toNextPage .port-text {
       font-family: 'Roboto regular';
       text-align: center;
       text-transform: uppercase;
       color: #E6B10A;
-      justify-content: center;
-      font-size: 15px;
-      font-weight: 400;
-      padding-bottom: 0;
-      padding-top: 0; }
-    body #cliense .client {
-      padding-top: 130px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding-bottom: 130px; }
-  body #contact {
-    margin-bottom: 100px; }
-    body #contact .con {
-      padding-top: 100px;
-      font-family: 'Roboto regular';
-      justify-content: center;
-      display: flex;
-      text-transform: uppercase;
-      color: #131316;
-      font-size: 25px; }
-    body #contact .contack {
-      font-family: 'Roboto regular';
-      display: flex;
-      text-transform: uppercase;
-      color: #E6B10A;
-      justify-content: center;
-      font-size: 15px;
-      font-weight: 400;
-      margin-bottom: 100px; }
-    body #contact .nameAndMail {
-      display: flex; }
-      body #contact .nameAndMail ::placeholder {
-        color: #ffffff;
-        font-size: 15px; }
-      body #contact .nameAndMail .email {
-        border: none;
-        height: 7%;
-        width: 100%;
-        background-color: #E6B10A;
-        padding: 15px 20px;
-        color: #ffffff;
-        font-size: 15px; }
-      body #contact .nameAndMail .name {
-        box-sizing: border-box;
-        border: none;
-        height: 7%;
-        width: 100%;
-        background-color: #E6B10A;
-        padding: 15px 20px;
-        color: #ffffff;
-        font-size: 15px; }
-    body #contact .subject {
-      padding-top: 20px; }
-      body #contact .subject ::placeholder {
-        color: #ffffff;
-        font-size: 15px; }
-      body #contact .subject .forSubject {
-        padding: 15px 20px;
-        border: none;
-        height: 7%;
-        width: 100%;
-        background-color: #E6B10A;
-        color: #ffffff;
-        font-size: 15px; }
-    body #contact .message {
-      padding-top: 20px; }
-      body #contact .message ::placeholder {
-        color: #ffffff;
-        font-size: 15px; }
-      body #contact .message .massageFor {
-        padding: 15px 20px;
-        width: 100%;
-        resize: none;
-        border: none;
-        height: 25%;
-        width: 100%;
-        background-color: #E6B10A;
-        color: #ffffff;
-        font-size: 15px; }
-    body #contact .buttonSubmit {
-      padding-top: 20px; }
-      body #contact .buttonSubmit .submit {
-        color: #E6B10A;
-        text-transform: uppercase;
-        width: 100%;
-        height: 7%;
-        border: none;
-        background: #131316;
-        font-family: 'Roboto regular';
-        font-size: 20px; }
-  body #foterFor {
-    justify-content: space-around;
+      font-size: 15px; }
+    #portfolio .toNextPage .loadMore .loadMorePicture {
+      width: 40px;
+      height: 20px; }
+      #portfolio .toNextPage .loadMore .loadMorePicture:hover {
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2); }
+
+#cliense {
+  background: #424245;
+  padding-top: 120px;
+  padding-bottom: 120px; }
+  #cliense .about-title {
+    margin-bottom: 50px; }
+    #cliense .about-title .title-headline {
+      color: #ffffff; }
+  #cliense .clientLogo {
+    max-width: 100%; }
+
+#contact {
+  padding-top: 120px;
+  padding-bottom: 200px; }
+  #contact .about-title {
+    margin-bottom: 120px; }
+  #contact #mail {
+    margin-top: 10px;
+    border: none;
+    width: 100%;
+    background-color: #E6B10A;
+    padding: 15px 20px;
+    color: #ffffff;
+    font-size: 15px; }
+  #contact ::placeholder {
+    color: #ffffff;
+    font-size: 15px; }
+  #contact #name {
+    margin-top: 10px;
+    box-sizing: border-box;
+    border: none;
+    width: 100%;
+    background-color: #E6B10A;
+    padding: 15px 20px;
+    color: #ffffff;
+    font-size: 15px; }
+  #contact #subject {
+    margin-top: 20px;
+    padding: 15px 20px;
+    border: none;
+    margin-bottom: 10px;
+    width: 100%;
+    background-color: #E6B10A;
+    color: #ffffff;
+    font-size: 15px; }
+  #contact .massage-for {
+    margin-top: 10px;
+    padding: 15px 20px;
+    width: 100%;
+    resize: none;
+    border: none;
+    font-size: 15px;
+    width: 100%;
+    background-color: #E6B10A;
+    color: #ffffff; }
+  #contact .submit {
+    margin-top: 10px;
+    color: #E6B10A;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #131316;
+    font-family: 'Roboto regular';
+    font-size: 20px; }
+
+#footer {
+  background: #131316;
+  padding-bottom: 50px;
+  padding-top: 50px; }
+  #footer .footer-text .web-text {
+    font-size: 13px;
+    font-weight: 400;
+    color: #E6B10A; }
+  #footer .icon-img {
     display: flex;
-    background: #131316; }
-    body #foterFor .websiteName {
-      margin-top: 30px;
-      margin-right: 70px;
-      align-items: center;
-      margin-bottom: 10px; }
-      body #foterFor .websiteName .nameLogo {
-        font-size: 13px;
-        font-family: 'Roboto regular';
-        color: #E6B10A; }
-    body #foterFor .logoA {
-      display: flex;
-      align-items: center;
-      margin-left: 70px;
+    justify-content: space-between;
+    align-items: center; }
+
+@media (min-width: 740px) and (max-width: 1400px) {
+  body #title {
+    padding-top: 50px; }
+    body #title .title-head .title-but {
       margin-top: 20px; }
-      body #foterFor .logoA .logoF {
-        margin: 15px; }
+    body #title .title-head .title-next {
+      margin-bottom: 50px; }
+  body #contact .form #mail {
+    margin-top: 20px; } }
+
+@media (max-width: 740px) {
+  body #about .logo {
+    justify-content: center; }
+  body #cliense .clientLogo {
+    padding: 10px; }
+  body #title {
+    padding-top: 50px; }
+    body #title .title-head .title-but {
+      padding-top: 10px; }
+    body #title .title-head .title-next {
+      margin-bottom: 5px; }
+  body #contact {
+    padding-bottom: 20px; }
+    body #contact .form #mail {
+      margin-top: 20px; } }
+
+@media (min-width: 1400px) {
+  body #cliense .client {
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 130px; }
+    body #cliense .client .clientLogo {
+      margin: 70px; } }
 
 /*# sourceMappingURL=style.bundle.css.map*/
