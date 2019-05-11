@@ -1410,8 +1410,6 @@ body {
     padding-top: 50px; }
     body #title .title-head .title-but {
       margin-top: 20px; }
-    body #title .title-head .title-next {
-      margin-bottom: 100px; }
   body #contact .form #mail {
     margin-top: 20px; } }
 
@@ -1425,7 +1423,7 @@ body {
     body #title .title-head .title-but {
       padding-top: 10px; }
     body #title .title-head .title-next {
-      margin-bottom: 50px; }
+      margin-bottom: 170px; }
   body #contact {
     padding-bottom: 20px; }
     body #contact .form #mail {
