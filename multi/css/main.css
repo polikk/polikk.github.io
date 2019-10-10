@@ -1,0 +1,620 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../resources/Montserrat-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../resources/Montserrat-SemiBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../resources/Montserrat-Bold.ttf") format("truetype"); }
+
+@media (max-width: 768px) {
+  .header {
+    padding: 5rem 1rem !important; }
+  .main {
+    padding: 5rem 1rem !important; }
+  .design {
+    padding: 5rem 1rem !important; }
+  .see {
+    padding: 5rem 1rem !important; }
+  .useful {
+    padding: 5rem 1rem !important; }
+  .mandigo {
+    padding: 5rem 1rem !important; }
+  .team {
+    padding: 5rem 1rem !important; }
+  .public {
+    padding: 5rem 1rem !important; }
+  .subscribe {
+    padding: 5rem 1rem !important; }
+  .contacts {
+    padding: 5rem 1rem !important; }
+  .header .menu {
+    display: none !important; }
+  .subscribe_form {
+    flex-wrap: wrap; }
+    .subscribe_form .form_button {
+      margin: 0 auto;
+      padding: 1.9rem; }
+  .newmenu {
+    position: fixed;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(49, 138, 182, 0.9);
+    z-index: 0.9; }
+    .newmenu .menu_link {
+      margin: 1rem 0; }
+  .burger {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1; }
+  .chang .menu {
+    flex-direction: column !important; }
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s; }
+  .change .bar1 {
+    transform: rotate(-45deg) translate(-9px, 6px); }
+  .change .bar2 {
+    opacity: 0; }
+  .change .bar3 {
+    transform: rotate(45deg) translate(-8px, -8px); }
+  .subscribe .subscribe_form .contact {
+    font-size: 1.1rem; } }
+
+@media (max-width: 1580px) {
+  .header .container {
+    justify-content: space-around !important; }
+  .main .form {
+    flex-wrap: wrap; }
+    .main .form .form_button.contact {
+      padding: 2rem 0.83rem;
+      display: block;
+      margin: 0 auto; }
+  .main .container {
+    align-items: center;
+    display: flex;
+    flex-direction: column; }
+  .design .container .design_title {
+    margin: 0 auto;
+    margin-top: 30px; }
+  .design .container .design_subtitle {
+    display: block;
+    text-align: center; }
+  .design .container .design_desq {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px; }
+  .design .container .design_card {
+    margin-top: 5rem; }
+  .see .container {
+    display: flex;
+    flex-direction: column; }
+  .see_video {
+    height: 20rem;
+    margin: 0 auto; }
+  .see_wrap {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .useful_card {
+    justify-content: center; }
+  .design_title {
+    margin: 0 auto;
+    margin-top: 30px; }
+  .design_subtitle {
+    display: block;
+    text-align: center; }
+  .design_desq {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px; }
+  .mandigo .container {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    align-items: center !important; }
+    .mandigo .container .mandig {
+      text-align: center; }
+  .team .team_card {
+    justify-content: center; }
+  .team .main_title {
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: center; }
+  .team .design_subtitle {
+    display: block;
+    text-align: center; }
+  .subscribe .container {
+    display: block !important; }
+  .public .public_card {
+    justify-content: space-around !important; }
+    .public .public_card_wrap {
+      margin: 20px 0; }
+  .public .design_title {
+    text-align: center; }
+  .contacts .container {
+    justify-content: space-around !important;
+    flex-wrap: wrap; } }
+
+@media (max-width: 450px) {
+  .public_card_wrap .wrap_name {
+    margin-left: 5rem !important; }
+  .team_card_wrap {
+    flex-wrap: wrap !important; }
+  .design_title {
+    font-size: 2rem !important; }
+  .main_title {
+    font-size: 2rem !important; } }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: Montserrat, sans-serif;
+  font-size: 12px; }
+
+.container {
+  max-width: 95rem;
+  width: 100%;
+  margin: 0 auto; }
+
+.header {
+  padding-top: 1.333rem;
+  padding-bottom: 2rem; }
+  .header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .header .page-name {
+    font-size: 3.41rem;
+    font-weight: 500;
+    color: #000000; }
+  .header .menu {
+    max-width: 37.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; }
+    .header .menu_link {
+      font-weight: 700;
+      text-decoration: none;
+      color: #000000;
+      font-size: 1rem;
+      text-transform: uppercase; }
+
+.main {
+  background-image: url(../img/img.jpg);
+  background-repeat: no-repeat;
+  background-position-x: 85rem;
+  background-size: 50%;
+  background-position-y: center;
+  padding: 15.83rem 0; }
+  .main_subtitle {
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #000000; }
+  .main_title {
+    margin-top: 1.5rem;
+    max-width: 28.9rem;
+    width: 100%;
+    font-size: 4.166rem;
+    font-weight: 700;
+    color: #000000; }
+  .main_desq {
+    margin-top: 1.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #000000;
+    max-width: 36.666rem;
+    width: 100%;
+    line-break: 19; }
+  .main .form {
+    display: flex;
+    margin-top: 3.33rem; }
+    .main .form_button {
+      max-width: 12.25rem;
+      width: 100%;
+      border: none;
+      color: #FFFFFF;
+      font-size: 1.25rem;
+      font-weight: 600;
+      background: linear-gradient(to bottom, #FDDB71, #EE7A37); }
+    .main .form #form-number {
+      font-size: 1.25rem;
+      color: #000000;
+      font-weight: 600;
+      display: block;
+      max-width: 26.6rem;
+      width: 100%;
+      padding: 2rem  0.83rem;
+      border: none;
+      box-shadow: 0 0.1rem 1.6rem 0.66rem #dddddd; }
+
+.design {
+  padding-bottom: 9rem; }
+  .design_subtitle {
+    word-spacing: 1rem;
+    letter-spacing: 0.8rem; }
+  .design_title {
+    max-width: 40.8333rem;
+    width: 100%; }
+  .design_desq {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    max-width: 52.916rem;
+    width: 100%;
+    line-height: 2rem;
+    color: #000000; }
+  .design_card {
+    margin-top: 10rem;
+    display: flex;
+    flex-wrap: wrap; }
+    .design_card_title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #000000;
+      max-width: 21.66rem;
+      width: 100%; }
+    .design_card_about {
+      margin-top: 1.5rem;
+      font-size: 1.25rem;
+      color: #000000;
+      max-width: 21.66rem;
+      width: 100%; }
+    .design_card_wrap {
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 31.66rem;
+      width: 100%;
+      margin: 0 auto; }
+      .design_card_wrap:hover {
+        box-shadow: 0 0.1rem 1.6rem 0.66rem #dddddd; }
+
+.see {
+  padding-bottom: 10rem;
+  padding-top: 10rem; }
+  .see .container {
+    display: flex;
+    justify-content: space-between; }
+  .see_wrap_link {
+    margin-top: 5rem;
+    max-width: 19rem;
+    width: 100%;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    letter-spacing: 0.5rem;
+    word-spacing: 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    padding: 1.5rem 1rem;
+    background: linear-gradient(to left, #FDDB71, #EE7A37);
+    border-radius: 0.5rem;
+    text-decoration: none; }
+  .see_video {
+    position: relative;
+    max-width: 35.66rem;
+    width: 100%;
+    background-color: #6C63FF; }
+    .see_video_link {
+      position: absolute;
+      bottom: 55%;
+      left: 45%; }
+    .see_video_link::before {
+      position: inherit;
+      content: url(../img/see.svg); }
+
+.useful {
+  padding-bottom: 10rem;
+  padding-top: 10rem; }
+  .useful_card {
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap; }
+    .useful_card_wrap {
+      margin: 2rem 1rem;
+      padding: 2rem;
+      max-width: 44.6666rem;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 0.1rem 1.6rem 0.66rem #dddddd;
+      justify-content: space-between;
+      background-color: #FFFFFF; }
+      .useful_card_wrap:hover {
+        background: linear-gradient(to right, #6C63FF, #C77CF1); }
+        .useful_card_wrap:hover .useful_card_wrap_date {
+          background-color: #FFFFFF;
+          color: #000000; }
+      .useful_card_wrap_date {
+        font-size: 1.0833rem;
+        padding: 1rem;
+        display: block;
+        background-color: #D4DFEC;
+        font-weight: 700;
+        color: #707070; }
+      .useful_card_wrap_text {
+        font-size: 1.25rem;
+        font-weight: 700; }
+        .useful_card_wrap_text::before {
+          content: url(../img/down.svg);
+          margin: 1rem; }
+
+.mandigo {
+  padding-bottom: 10rem;
+  padding-top: 10rem; }
+  .mandigo .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around; }
+  .mandigo_text {
+    max-width: 58.6666rem;
+    width: 100%;
+    font-size: 3.33rem;
+    position: relative; }
+    .mandigo_text::before {
+      content: url(../img/Path2.jpg);
+      position: absolute;
+      top: -5rem; }
+  .mandigo_autor {
+    margin-top: 3rem;
+    display: block;
+    font-size: 1.25rem;
+    font-weight: 700; }
+  .mandigo .autor_image .autor_img {
+    position: relative;
+    border-radius: 50%;
+    border-color: #000000;
+    border: 0.2rem solid #707070; }
+
+.team {
+  padding-bottom: 10rem;
+  padding-top: 10rem; }
+  .team_title {
+    max-width: 42.75rem;
+    width: 100%; }
+  .team_card {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3rem; }
+    .team_card_wrap {
+      max-width: 44.66rem;
+      width: 100%;
+      display: flex;
+      padding: 1rem; }
+      .team_card_wrap_img {
+        max-width: 14.16rem;
+        width: 100%;
+        max-height: 14.16rem;
+        height: 100%; }
+      .team_card_wrap_about {
+        justify-content: space-evenly;
+        max-width: 30.5rem;
+        width: 100%;
+        border: 1px solid #F3F3F3;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 0; }
+        .team_card_wrap_about:hover {
+          background: linear-gradient(to right, #6C63FF, #C77CF1); }
+          .team_card_wrap_about:hover .team_card_wrap_about_title {
+            color: #FFFFFF; }
+          .team_card_wrap_about:hover .team_card_wrap_about_desq {
+            color: #FFFFFF; }
+        .team_card_wrap_about_title {
+          margin-left: 1rem;
+          font-size: 1.66rem;
+          font-weight: 700;
+          scroll-margin-left: 2rem; }
+        .team_card_wrap_about_desq {
+          margin-left: 1rem;
+          font-size: 1.66rem;
+          font-weight: 400; }
+
+.public {
+  padding-top: 10rem;
+  padding-bottom: 10rem; }
+  .public_card {
+    padding: 5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .public_card_wrap {
+      box-shadow: 0 0.1rem 6.6rem 0.66rem #dddddd;
+      max-width: 28.75rem;
+      width: 100%; }
+      .public_card_wrap .wrap_img {
+        max-width: 28.75rem;
+        width: 100%;
+        background-color: #000000;
+        margin-bottom: 2rem; }
+      .public_card_wrap .wrap_date {
+        position: relative;
+        margin-left: 3rem;
+        font-size: 1.25rem;
+        font-weight: 400; }
+        .public_card_wrap .wrap_date::before {
+          content: url(../img/dat.svg);
+          left: -1.5rem;
+          position: absolute; }
+      .public_card_wrap .wrap_name {
+        position: relative;
+        margin-left: 12rem;
+        font-size: 1.25rem;
+        font-weight: 400; }
+        .public_card_wrap .wrap_name::before {
+          content: url(../img/identity.svg);
+          left: -1.5rem;
+          position: absolute; }
+      .public_card_wrap .wrap_about {
+        margin-left: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        max-width: 20.833rem;
+        width: 100%;
+        font-size: 2.5rem;
+        font-weight: 700; }
+      .public_card_wrap .wrap_link {
+        font-size: 1.25rem;
+        text-decoration: none;
+        color: #256ECE;
+        margin-left: 1rem;
+        margin-bottom: 2rem;
+        display: block; }
+
+.subscribe {
+  background: linear-gradient(to right, #6C63FF, #C77CF1);
+  padding: 10rem; }
+  .subscribe .container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between; }
+  .subscribe_text {
+    font-size: 1.83333rem;
+    font-weight: 700;
+    color: #FFFFFF; }
+  .subscribe_form {
+    max-width: 58.3rem;
+    width: 100%;
+    display: flex;
+    margin-top: 3.33rem; }
+    .subscribe_form .contact {
+      max-width: 12.9rem;
+      width: 100%;
+      border: none;
+      color: #FFFFFF;
+      font-size: 1.8333333333333333rem;
+      font-weight: 600;
+      background: linear-gradient(to bottom, #FDDB71, #EE7A37); }
+  .subscribe #form-email {
+    max-width: 45rem;
+    width: 100%;
+    padding: 1.9rem;
+    font-size: 1.25rem; }
+
+.contacts {
+  padding-top: 10rem;
+  padding-bottom: 10rem; }
+  .contacts .container {
+    display: flex;
+    justify-content: space-between; }
+  .contacts_card {
+    display: flex;
+    flex-direction: column; }
+    .contacts_card_link {
+      text-decoration: none;
+      font-size: 1.25rem;
+      color: #000000;
+      font-weight: 400;
+      margin: 1rem 0; }
+    .contacts_card_adress {
+      margin: 1.5rem 0;
+      color: #000000;
+      font-size: 1.25rem;
+      max-width: 15.25rem;
+      width: 100%; }
+    .contacts_card_email {
+      margin: 1.5rem 2rem;
+      color: #000000;
+      font-size: 1.25rem;
+      text-decoration: none;
+      font-weight: 700;
+      position: relative; }
+      .contacts_card_email::before {
+        position: absolute;
+        content: url(../img/call.svg);
+        left: -2rem; }
+    .contacts_card_telephone {
+      margin: 1.5rem 2rem;
+      color: #000000;
+      font-size: 1.25rem;
+      text-decoration: none;
+      font-weight: 700;
+      position: relative; }
+      .contacts_card_telephone::before {
+        position: absolute;
+        content: url(../img/email.svg);
+        left: -2rem; }
+    .contacts_card_title {
+      margin-bottom: 4rem;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #000000; }
+    .contacts_card_button {
+      border: 0.1rem solid grey;
+      border-radius: 0.3rem;
+      margin: 1.5rem 0;
+      max-width: 21.5rem;
+      width: 100%;
+      display: flex;
+      justify-content: space-between; }
+      .contacts_card_button_link {
+        padding: 1rem;
+        text-decoration: none;
+        font-size: 1.25rem;
+        color: #000000; }
+        .contacts_card_button_link:last-child {
+          border-left: 0.1rem solid grey; }
