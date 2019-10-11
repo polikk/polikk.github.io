@@ -200,6 +200,26 @@ table {
     flex-wrap: wrap; } }
 
 @media (max-width: 450px) {
+  .header {
+    padding: 2rem 1rem !important; }
+  .main {
+    padding: 2rem 1rem !important; }
+  .design {
+    padding: 2rem 1rem !important; }
+  .see {
+    padding: 2rem 1rem !important; }
+  .useful {
+    padding: 2rem 1rem !important; }
+  .mandigo {
+    padding: 2rem 1rem !important; }
+  .team {
+    padding: 2rem 1rem !important; }
+  .public {
+    padding: 2rem 1rem !important; }
+  .subscribe {
+    padding: 2rem 1rem !important; }
+  .contacts {
+    padding: 2rem 1rem !important; }
   .main .form #form-number{
     margin-bottom: 1rem;
   }
