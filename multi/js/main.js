@@ -1,11 +1,10 @@
 "use strict";
 
-function myFunction(x) {
-  x.classList.toggle("change");
-
-  if ($(x).hasClass('change')) {
-    document.getElementById('menu').setAttribute("class", "newmenu");
-  } else {
-    document.getElementById('menu').setAttribute("class", "menu");
-  }
-}
+$('#burger').on("click", function (e) {
+  e.preventDefault();
+  $('#burger').toggleClass('change');
+  $('#menu').toggleClass('newmenu');
+});
+$('.menu_link').on("click", function () {
+  $('#menu').toggleClass('newmenu');
+});

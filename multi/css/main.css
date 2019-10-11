@@ -80,7 +80,7 @@ table {
   .contacts {
     padding: 5rem 1rem !important; }
   .header .menu {
-    display: none !important; }
+    display: none ; }
   .subscribe_form {
     flex-wrap: wrap; }
     .subscribe_form .form_button {
