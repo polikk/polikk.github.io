@@ -58,192 +58,6 @@ table {
   font-weight: 700;
   src: url("../resources/Montserrat-Bold.ttf") format("truetype"); }
 
-@media (max-width: 768px) {
-  .header {
-    padding: 5rem 1rem !important; }
-  .main {
-    padding: 5rem 1rem !important; }
-  .design {
-    padding: 5rem 1rem !important; }
-  .see {
-    padding: 5rem 1rem !important; }
-  .useful {
-    padding: 5rem 1rem !important; }
-  .mandigo {
-    padding: 5rem 1rem !important; }
-  .team {
-    padding: 5rem 1rem !important; }
-  .public {
-    padding: 5rem 1rem !important; }
-  .subscribe {
-    padding: 5rem 1rem !important; }
-  .contacts {
-    padding: 5rem 1rem !important; }
-  .header .menu {
-    display: none ; }
-  .subscribe_form {
-    flex-wrap: wrap; }
-    .subscribe_form .form_button {
-      margin: 0 auto;
-      padding: 1.9rem; }
-  .newmenu {
-    position: fixed;
-    top: 0;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(49, 138, 182, 0.9);
-    z-index: 0.9; }
-    .newmenu .menu_link {
-      margin: 1rem 0; }
-  .burger {
-    position: fixed;
-    top: 1rem;
-    right: 1rem;
-    z-index: 1; }
-  .chang .menu {
-    flex-direction: column !important; }
-  .bar1, .bar2, .bar3 {
-    width: 65px;
-    height: 8px;
-    background-color: #333;
-    margin: 6px 0;
-    transition: 0.4s; }
-  .change .bar1 {
-    transform: rotate(-45deg) translate(-9px, 6px); }
-  .change .bar2 {
-    opacity: 0; }
-  .change .bar3 {
-    transform: rotate(45deg) translate(-8px, -8px); }
-  .subscribe .subscribe_form .contact {
-    font-size: 1.1rem; 
-    margin-top: 1rem;
-  } }
-
-@media (max-width: 1580px) {
-  .header .container {
-    justify-content: space-around !important; }
-  .main .form {
-    flex-wrap: wrap; }
-    .main .form .form_button.contact {
-      padding: 2rem 0.83rem;
-      margin-top: 1rem;;
-      display: block;
-      margin: 0 auto; }
-  .main .container {
-    align-items: center;
-    display: flex;
-    flex-direction: column; }
-  .design .container .design_title {
-    margin: 0 auto;
-    margin-top: 30px; }
-  .design .container .design_subtitle {
-    display: block;
-    text-align: center; }
-  .design .container .design_desq {
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 30px; }
-  .design .container .design_card {
-    margin-top: 5rem; }
-  .see .container {
-    display: flex;
-    flex-direction: column; }
-  .see_video {
-    height: 20rem;
-    margin: 0 auto; }
-  .see_wrap {
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-  .useful_card {
-    justify-content: center; }
-  .design_title {
-    margin: 0 auto;
-    margin-top: 30px; }
-  .design_subtitle {
-    display: block;
-    text-align: center; }
-  .design_desq {
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 30px; }
-  .mandigo .container {
-    flex-wrap: wrap;
-    flex-direction: column-reverse;
-    align-items: center !important; }
-    .mandigo .container .mandig {
-      text-align: center; }
-  .team .team_card {
-    justify-content: center; }
-  .team .main_title {
-    margin: 0 auto;
-    margin-top: 30px;
-    text-align: center; }
-  .team .design_subtitle {
-    display: block;
-    text-align: center; }
-  .subscribe .container {
-    display: block !important; }
-  .public .public_card {
-    justify-content: space-around !important; }
-    .public .public_card_wrap {
-      margin: 20px 0; }
-  .public .design_title {
-    text-align: center; }
-  .contacts .container {
-    justify-content: space-around !important;
-    flex-wrap: wrap; } }
-
-@media (max-width: 450px) {
-  .header {
-    padding: 2rem 1rem !important; }
-  .main {
-    padding: 2rem 1rem !important; }
-  .design {
-    padding: 2rem 1rem !important; }
-  .see {
-    padding: 2rem 1rem !important; }
-  .useful {
-    padding: 2rem 1rem !important; }
-  .mandigo {
-    padding: 2rem 1rem !important; }
-  .team {
-    padding: 2rem 1rem !important; }
-  .public {
-    padding: 2rem 1rem !important; }
-  .subscribe {
-    padding: 2rem 1rem !important; }
-  .contacts {
-    padding: 2rem 1rem !important; }
-  .main .form #form-number{
-    margin-bottom: 1rem;
-  }
-  .team_card_wrap{
-    justify-content: center;
-  }
-  .mandigo_text{
-    font-size: 2.33rem!important;
-  }
-  .useful_card_wrap_text{
-    font-size: 1.1rem!important;
-  }
-  .public_card_wrap .wrap_name {
-    margin-left: 5rem !important; }
-  .team_card_wrap {
-    flex-wrap: wrap !important; }
-  .design_title {
-    font-size: 2rem !important;
-    text-align: center!important;
-   }
-  .main_title {
-    text-align: center!important;
-    font-size: 2rem !important; } }
-
 * {
   box-sizing: border-box; }
 
@@ -477,7 +291,6 @@ body {
   .team_card {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center!important;
     margin-top: 3rem; }
     .team_card_wrap {
       max-width: 44.66rem;
@@ -657,3 +470,152 @@ body {
         color: #000000; }
         .contacts_card_button_link:last-child {
           border-left: 0.1rem solid grey; }
+
+@media (max-width: 768px) {
+  .header {
+    padding: 5rem 1rem !important; }
+  .main {
+    padding: 5rem 1rem !important; }
+  .design {
+    padding: 5rem 1rem !important; }
+  .see {
+    padding: 5rem 1rem !important; }
+  .useful {
+    padding: 5rem 1rem !important; }
+  .mandigo {
+    padding: 5rem 1rem !important; }
+  .team {
+    padding: 5rem 1rem !important; }
+  .public {
+    padding: 5rem 1rem !important; }
+  .subscribe {
+    padding: 5rem 1rem !important; }
+  .contacts {
+    padding: 5rem 1rem !important; }
+  .header .menu {
+    display: none; }
+  .subscribe_form {
+    flex-wrap: wrap; }
+    .subscribe_form .form_button {
+      margin: 0 auto;
+      padding: 1.9rem; }
+  .newmenu {
+    position: fixed;
+    display: flex !important;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(49, 138, 182, 0.9);
+    z-index: 0.9; }
+    .newmenu .menu_link {
+      margin: 1rem 0; }
+  .burger {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1; }
+  .chang .menu {
+    flex-direction: column !important; }
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s; }
+  .change .bar1 {
+    transform: rotate(-45deg) translate(-9px, 6px); }
+  .change .bar2 {
+    opacity: 0; }
+  .change .bar3 {
+    transform: rotate(45deg) translate(-8px, -8px); }
+  .subscribe .subscribe_form .contact {
+    font-size: 1.1rem; } }
+
+@media (max-width: 1580px) {
+  .header .container {
+    justify-content: space-around !important; }
+  .main .form {
+    flex-wrap: wrap; }
+    .main .form .form_button.contact {
+      padding: 2rem 0.83rem;
+      display: block;
+      margin: 0 auto; }
+  .main .container {
+    align-items: center;
+    display: flex;
+    flex-direction: column; }
+  .design .container .design_title {
+    margin: 0 auto;
+    margin-top: 30px; }
+  .design .container .design_subtitle {
+    display: block;
+    text-align: center; }
+  .design .container .design_desq {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px; }
+  .design .container .design_card {
+    margin-top: 5rem; }
+  .see .container {
+    display: flex;
+    flex-direction: column; }
+  .see_video {
+    height: 20rem;
+    margin: 0 auto; }
+  .see_wrap {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .useful_card {
+    justify-content: center; }
+  .design_title {
+    margin: 0 auto;
+    margin-top: 30px; }
+  .design_subtitle {
+    display: block;
+    text-align: center; }
+  .design_desq {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px; }
+  .mandigo .container {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    align-items: center !important; }
+    .mandigo .container .mandig {
+      text-align: center; }
+  .team .team_card {
+    justify-content: center; }
+  .team .main_title {
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: center; }
+  .team .design_subtitle {
+    display: block;
+    text-align: center; }
+  .subscribe .container {
+    display: block !important; }
+  .public .public_card {
+    justify-content: space-around !important; }
+    .public .public_card_wrap {
+      margin: 20px 0; }
+  .public .design_title {
+    text-align: center; }
+  .contacts .container {
+    justify-content: space-around !important;
+    flex-wrap: wrap; } }
+
+@media (max-width: 450px) {
+  .public_card_wrap .wrap_name {
+    margin-left: 5rem !important; }
+  .team_card_wrap {
+    flex-wrap: wrap !important; }
+  .design_title {
+    font-size: 2rem !important; }
+  .main_title {
+    font-size: 2rem !important; } }
