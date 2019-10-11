@@ -107,8 +107,8 @@ table {
   .chang .menu {
     flex-direction: column !important; }
   .bar1, .bar2, .bar3 {
-    width: 75px;
-    height: 10px;
+    width: 65px;
+    height: 8px;
     background-color: #333;
     margin: 6px 0;
     transition: 0.4s; }
@@ -200,6 +200,9 @@ table {
     flex-wrap: wrap; } }
 
 @media (max-width: 450px) {
+  .main .form #form-number{
+    margin-bottom: 1rem;
+  }
   .team_card_wrap{
     justify-content: center;
   }
