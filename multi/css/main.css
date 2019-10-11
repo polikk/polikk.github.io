@@ -501,7 +501,7 @@ body {
       padding: 1.9rem; }
   .newmenu {
     position: fixed;
-    justify-content: center;
+    justify-content: center!important;
     display: flex !important;
     top: 0;
     align-items: center;
@@ -616,6 +616,7 @@ body {
   .public_card_wrap .wrap_name {
     margin-left: 5rem !important; }
   .team_card_wrap {
+    justify-content: center;
     flex-wrap: wrap !important; }
   .design_title {
     font-size: 2rem !important; }
