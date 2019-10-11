@@ -501,6 +501,7 @@ body {
       padding: 1.9rem; }
   .newmenu {
     position: fixed;
+    justify-content: center;
     display: flex !important;
     top: 0;
     align-items: center;
@@ -510,19 +511,20 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgba(49, 138, 182, 0.9);
-    z-index: 0.9; }
+    z-index: 100; }
     .newmenu .menu_link {
+      font-size: 1.5rem!important;
       margin: 1rem 0; }
   .burger {
     position: fixed;
     top: 1rem;
     right: 1rem;
-    z-index: 1; }
+    z-index: 110; }
   .chang .menu {
     flex-direction: column !important; }
   .bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
+    width: 55px;
+    height: 6px;
     background-color: #333;
     margin: 6px 0;
     transition: 0.4s; }
