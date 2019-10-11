@@ -617,6 +617,9 @@ body {
     flex-wrap: wrap; } }
 
 @media (max-width: 450px) {
+  .useful_card_wrap_text{
+    font-size: 1.1rem!important;
+  }
   .mandigo_text{
     font-size: 2rem!important;
   }
