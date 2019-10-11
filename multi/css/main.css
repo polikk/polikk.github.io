@@ -617,7 +617,9 @@ body {
     flex-wrap: wrap; } }
 
 @media (max-width: 450px) {
-  
+  .mandigo_text{
+    font-size: 2rem!important;
+  }
   .header {
     padding: 2rem 1rem !important; }
   .main {
