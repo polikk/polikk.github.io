@@ -107,8 +107,8 @@ table {
   .chang .menu {
     flex-direction: column !important; }
   .bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
+    width: 75px;
+    height: 10px;
     background-color: #333;
     margin: 6px 0;
     transition: 0.4s; }
@@ -119,7 +119,9 @@ table {
   .change .bar3 {
     transform: rotate(45deg) translate(-8px, -8px); }
   .subscribe .subscribe_form .contact {
-    font-size: 1.1rem; } }
+    font-size: 1.1rem; 
+    margin-top: 1rem;
+  } }
 
 @media (max-width: 1580px) {
   .header .container {
@@ -128,6 +130,7 @@ table {
     flex-wrap: wrap; }
     .main .form .form_button.contact {
       padding: 2rem 0.83rem;
+      margin-top: 1rem;;
       display: block;
       margin: 0 auto; }
   .main .container {
@@ -197,6 +200,15 @@ table {
     flex-wrap: wrap; } }
 
 @media (max-width: 450px) {
+  .team_card_wrap{
+    justify-content: center;
+  }
+  .mandigo_text{
+    font-size: 2.33rem!important;
+  }
+  .useful_card_wrap_text{
+    font-size: 1.1rem!important;
+  }
   .public_card_wrap .wrap_name {
     margin-left: 5rem !important; }
   .team_card_wrap {
