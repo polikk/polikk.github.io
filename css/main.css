@@ -43,11 +43,29 @@ table {
 * {
   box-sizing: border-box; }
 
-body {
-  background-image: url(../img/back.jpg), linear-gradient(45deg, #f8a261, #6e9fc9);
+.header {
+  background-image: url(../img/back.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-blend-mode: color-burn; }
+  padding: 280px 0 0 0;
+  background-position: center; }
+  .header_text {
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    margin: 50px 0;
+    font-size: 32px;
+    font-family: Geometria,sans-serif;
+    font-weight: 700;
+    color: aliceblue; }
+  .header_button {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 260px 0; }
+  .header_link {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 82px; }
 
 .container {
   max-width: 1170px;
@@ -57,14 +75,30 @@ body {
 .work {
   padding: 150px 0; }
   .work .container {
+    max-width: 1470px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; }
+  .work_card {
+    margin: 50px 0; }
+    .work_card:hover {
+      box-shadow: 0 0.1rem 3.6rem 2.6rem #dddd; }
+    .work_card_img {
+      max-width: 700px;
+      max-height: 400px;
+      width: 100%;
+      height: 100%; }
+
+.footer {
+  padding: 80px 0;
+  background: rgba(32, 32, 32, 0.867); }
+  .footer_social {
+    display: flex;
     justify-content: space-around; }
-    .work_card{
-      padding: 20px 0;
-    }
-  .work_card_img {
-    max-width: 200px;
-    max-height: 300px;
-    width: 100%;
-    height: 100%; }
+  .footer_link {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 22px; }
+  .footer_link i {
+    padding: 0 10px; }
