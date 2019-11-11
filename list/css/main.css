@@ -277,7 +277,7 @@ body {
   .list_item_icon {
     max-width: 25vw; } }
 
-@media (min-width: 1920px) {
+@media (min-width: 1980px) {
   .list_item_text {
     padding: 5rem 3rem; }
   .list_item_left .list_card:first-child::after {
