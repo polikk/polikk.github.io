@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="./css/main.css"/>
+    <title>Breez</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="pop" id="pop">
+        <div class="form_registration">
+          <form class="form_action" action="" methode="post">
+            <div class="form__title">Create your account</div>
+            <div class="form__field">
+              <input class="form__input" id="first_name" type="text" required="required" placeholder="First Name"/>
+              <label class="form__label" for="first_name">First Name</label>
+            </div>
+            <div class="form__field"> 
+              <input class="form__input" type="text" id="last_name" name="last_name" required="required" placeholder="Last Name"/>
+              <label class="form__label" for="last_name">Last Name</label>
+            </div>
+            <div class="form__field">
+              <input class="form__input" type="email" id="email" name="email" placeholder="Email" required="required"/>
+              <label class="form__label" for="email">Email</label>
+            </div>
+            <div class="form__field">
+              <input class="form__input" type="password" id="password" name="password" required="required" placeholder="Password"/>
+              <label class="form__label" for="password">Password</label>
+            </div>
+            <div class="form-field">
+              <button class="form__submit" type="submit">Sign Up  </button>
+            </div>
+          </form>
+          <button class="button_close" onclick="Close"> </button>
+        </div>
+      </div>
+      <div class="container">
+        <div class="header__topline">
+          <div class="topline_telephone"><img class="topline__icon" src="./img/icon_phone.jpg" alt="icon_phone"/><a class="topline__link link" href="tel:+7771001234">Call Us + 777 (100) 12 34</a></div>
+          <div class="topline_welcome"><span class="welcome__text">Welcome visitor you can  <a class="welcome__link link" href="#">login</a> or <a class="welcome__link link" href="#">create an account.</a></span></div>
+          <div class="topline_lang">
+            <input class="input__money" type="radio" name="money" value="usa" checked="checked" id="dolars"/>
+            <label class="currency__name" for="dolars" id="money">EN</label>
+            <input class="input__money" type="radio" name="money" value="france" id="frans"/>
+            <label class="currency__name" for="frans" id="money_1">FR</label>
+            <input class="input__money" type="radio" name="money" value="germany" id="germ"/>
+            <label class="currency__name" for="germ" id="money_2">GM</label>
+          </div>
+          <div class="topline_currency">
+            <input class="input__money" type="radio" name="euro" value="1" checked="checked" id="dolar"/>
+            <label class="currency__name" for="dolar" id="change">$</label>
+            <input class="input__money" type="radio" name="euro" value="2" id="euro"/>
+            <label class="currency__name" for="euro" id="change_1">€</label>
+            <input class="input__money" type="radio" name="euro" value="3" id="franq"/>
+            <label class="currency__name" for="franq" id="change_2">£</label>
+          </div>
+        </div>
+        <div class="header__bottomline">
+          <div class="header__logo"><img src="./img/Logo.jpg" alt="logo" srcset=""/></div>
+          <form class="header__form" action="" method="post">
+            <input class="header__search" id="search" type="search" name="Search" placeholder="Search entire store here..."/>
+            <button class="header__seatch_submit" type="submit"><img src="./img/Search.jpg" alt="search" srcset=""/></button>
+          </form>
+          <div class="header__acount">
+            <button class="acount__link" href="#">My Account                      </button>
+            <button class="acount__link" href="#">My Wishlist </button>
+            <button class="acount__link button_active" onclick="someFunc()">Log In </button>
+            <button class="acount__link button_sing" onclick="some()">Sign Up</button>
+            <button class="acount__link acount__link_basket" href="#"> <img class="basket__icon" src="./img/icon_cart.png" alt="icon_card" srcset=""/>Cart<span class="counter" id="vaal">$</span><span class="counter"> 0.00 </span></button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero">
+        <div class="container">
+          <nav class="hero_nav"><a class="nav__link" href="#">Home    </a>
+            <div class="dropdown">Solids 
+              <div class="dropdown_item"><a class="dropdown__link" href="#">For Home</a><a class="dropdown__link" href="#">For Garden</a><a class="dropdown__link" href="#">For Car</a></div>
+            </div><a class="nav__link" href="#">   Liquids  </a><a class="nav__link" href="#">  Spray  </a><a class="nav__link" href="#"> Electric</a><a class="nav__link" href="#"> for cars</a>
+          </nav>
+          <div class="hero_slider">
+            <div class="hero_slider__first">
+              <div class="hero_slider__img"><img class="slider__blog_img" src="./img/slider.png" alt="slider" srcset=""/></div>
+              <div class="hero_slider__about">
+                <h2 class="hero_slider__title">Breeze Noticeables</h2>
+                <p class="hero_slider__text">The new series of natural air fresheners.  Febreze Noticeables </p>
+                <p class="hero_slider__text">Febreze Noticeables Meadows & Rain </p>
+                <p class="hero_slider__text">Air Freshener Refill.</p>
+              </div>
+            </div>
+            <div class="hero_slider__first">
+              <div class="hero_slider__img"><img class="slider__blog_img" src="./img/slider.png" alt="slider" srcset=""/></div>
+              <div class="hero_slider__about">
+                <h2 class="hero_slider__title">Breeze Noticeables</h2>
+                <p class="hero_slider__text">The new series of natural air fresheners.   </p>
+                <p class="hero_slider__text">Febreze Noticeables Meadows & Rain </p>
+                <p class="hero_slider__text">Air Freshener Refill.</p>
+              </div>
+            </div>
+            <div class="hero_slider__first">
+              <div class="hero_slider__img"><img class="slider__blog_img" src="./img/slider.png" alt="slider" srcset=""/></div>
+              <div class="hero_slider__about">
+                <h2 class="hero_slider__title">Breeze Noticeables</h2>
+                <p class="hero_slider__text">The new series of natural air fresheners.  Febreze Noticeables </p>
+                <p class="hero_slider__text">Febreze Noticeables Meadows & Rain </p>
+                <p class="hero_slider__text">Air Freshener Refill.</p>
+              </div>
+            </div>
+          </div>
+          <div class="buttons">
+            <button class="buttons__left"><img class="buttons__img buttons__img_left" src="./img/arrow.png" alt="arrow" srcset=""/></button>
+            <button class="buttons__right">  <img class="buttons__img" src="./img/arrow.png" alt="arrow" srcset=""/></button>
+          </div>
+          <div class="hero_card">
+            <div class="hero_card__item"><img class="hero_card__img" src="./img/baner.jpg" alt="baner"/>
+              <div class="hero_card__text">
+                <h4 class="hero_card__title">Best price</h4><span class="hero_card__about"> this week</span>
+              </div>
+            </div>
+            <div class="hero_card__item"><img class="hero_card__img" src="./img/baner2.jpg" alt="baner2"/>
+              <div class="hero_card__text">
+                <h4 class="hero_card__title">New smells  </h4><span class="hero_card__about">in the next series</span>
+              </div>
+            </div>
+            <div class="hero_card__item"><img class="hero_card__img" src="./img/baner3.jpg" alt="baner3"/>
+              <div class="hero_card__text">
+                <h4 class="hero_card__title">Only natural  </h4><span class="hero_card__about">air fresheners</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="store">
+        <div class="container">
+          <div class="store_wrap">
+            <h2 class="store__title">Best Sellers</h2>
+            <div class="store_buttons">
+              <buttons class="button__left"><img class="button__img button__img_left" src="./img/arrow.png" alt="arrow" srcset=""/></buttons>
+              <buttons class="button__right">  <img class="button__img" src="./img/arrow.png" alt="arrow" srcset=""/></buttons>
+            </div>
+          </div>
+          <div class="store_slider">
+            <div class="card__item">
+              <div class="card__image card__item_bef"><img class="card__img" src="./img/card_1.png" alt="card_1" srcset=""/></div>
+              <h4 class="card__title"> Febreze Air Effects New Zealand Springs</h4>
+              <div class="card__menu">
+                <div class="card__price">
+                  <div class="price_up"><span class="price__new" id="in">$</span><span class="price__new"> 550.00</span></div>
+                  <div class="price_down"><span class="valute price__old">$</span><span class="price__old">725.00</span></div>
+                </div>
+                <button class="card__reset button__link"><img class="card__resets image__card_button" src="./img/transfer.jpg" alt="trans" srcset=""/></button>
+                <button class="card__like button__link"><img class="card__likes image__card_button" src="./img/heart.jpg" alt="like" srcset=""/></button>
+                <button class="card__add button__link"><img class="card__adds image__card_button" src="./img/add.png" alt="add" srcset=""/></button>
+              </div>
+            </div>
+            <div class="card__item">
+              <div class="card__image"><img class="card__img" src="./img/card_2.png" alt="" srcset=""/></div>
+              <h4 class="card__title">     Febreze Noticeables 2 Refills</h4>
+              <div class="card__menu">
+                <div class="card__price"><span class="price__new">$399.00</span><span class="price__old"></span></div>
+                <button class="card__reset button__link"><img class="card__resets image__card_button" src="./img/transfer.jpg" alt="trans" srcset=""/></button>
+                <button class="card__like button__link"><img class="card__likes image__card_button" src="./img/heart.jpg" alt="like" srcset=""/></button>
+                <button class="card__add button__link"><img class="card__adds image__card_button" src="./img/add.png" alt="add" srcset=""/></button>
+              </div>
+            </div>
+            <div class="card__item">
+              <div class="card__image card__item_bef"><img class="card__img" src="./img/card_3.png" alt="card_3" srcset=""/></div>
+              <h4 class="card__title"> Beanpod Candles Orange Vanilla, Tea Light</h4>
+              <div class="card__menu">
+                <div class="card__price"><span class="price__new">$330.00</span><span class="price__old">$499.00</span></div>
+                <button class="card__reset button__link"><img class="card__resets image__card_button" src="./img/transfer.jpg" alt="trans" srcset=""/></button>
+                <button class="card__like button__link"><img class="card__likes image__card_button" src="./img/heart.jpg" alt="like" srcset=""/></button>
+                <button class="card__add button__link"><img class="card__adds image__card_button" src="./img/add.png" alt="add" srcset=""/></button>
+              </div>
+            </div>
+            <div class="card__item">
+              <div class="card__image"><img class="card__img" src="./img/card_4.png" alt="card_4" srcset=""/></div>
+              <h4 class="card__title"> Linen & Sky Air Freshener Refill</h4>
+              <div class="card__menu">
+                <div class="card__price"><span class="price__new"> $173.00</span><span class="price__old"></span></div>
+                <button class="card__reset button__link"><img class="card__resets image__card_button" src="./img/transfer.jpg" alt="trans" srcset=""/></button>
+                <button class="card__like button__link"><img class="card__likes image__card_button" src="./img/heart.jpg" alt="like" srcset=""/></button>
+                <button class="card__add button__link"><img class="card__adds image__card_button" src="./img/add.png" alt="add" srcset=""/></button>
+              </div>
+            </div>
+            <div class="card__item">
+              <div class="card__image"><img class="card__img" src="./img/card_1.png" alt="card_1" srcset=""/></div>
+              <h4 class="card__title"> Febreze Air Effects New Zealand Springs</h4>
+              <div class="card__menu">
+                <div class="card__price"><span class="price__new"></span><span class="price__old"></span></div>
+                <button class="card__reset button__link"><img class="card__resets image__card_button" src="./img/transfer.jpg" alt="trans" srcset=""/></button>
+                <button class="card__like button__link"><img class="card__likes image__card_button" src="./img/heart.jpg" alt="like" srcset=""/></button>
+                <button class="card__add button__link"><img class="card__adds image__card_button" src="./img/add.png" alt="add" srcset=""/></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="store_wrap">
+            <h2 class="store__title">Featured Products</h2>
+            <div class="store_buttons feature_buttons">
+              <buttons class="feature__left"><img class="button__img button__img_left" src="./img/arrow.png" alt="arrow" srcset=""/></buttons>
+              <buttons class="feature__right">  <img class="button__img" src="./img/arrow.png" alt="arrow" srcset=""/></buttons>
+            </div>
+          </div>
+          <div class="feature_store">
+            <div class="card__item">
+              <div class="card__image card__item_bef"><img class="card__img" src="./img/card_1.png" alt="card_1" srcset=""/></div>
+              <h4 class="card__title"> Air Wick Scented Oil Warmer</h4>
+              <div class="card__menu card__menu_mod">
+                <div class="card__price"><span class="price__new">$250.00</span><span class="price__old">$325.00</span></div>
+                <button class="card__reset button__link"><img class="card__resets image__card_button" src="./img/transfer.jpg" alt="trans" srcset=""/></button>
+                <button class="card__like button__link"><img class="card__likes image__card_button" src="./img/heart.jpg" alt="like" srcset=""/></button>
+                <button class="card__add button__link"><img class="card__adds image__card_button" src="./img/add.png" alt="add" srcset=""/></button>
+              </div>
+            </div>
+            <div class="card__item">
+              <div class="card__image"><img class="card__img" src="./img/card_2.png" alt="card_2" srcset=""/></div>
+              <h4 class="card__title">     Freshmatic Ultra Automatic Spray Starter Kit</h4>
+              <div class="card__menu card__menu_mod">
+                <div class="card__price"><span class="price__new">$177.00</span><span class="price__old"></span></div>
+                <button class="card__reset button__link"><img class="card__resets image__card_button" src="./img/transfer.jpg" alt="trans" srcset=""/></button>
+                <button class="card__like button__link"><img class="card__likes image__card_button" src="./img/heart.jpg" alt="like" srcset=""/></button>
+                <button class="card__add button__link"><img class="card__adds image__card_button" src="./img/add.png" alt="add" srcset=""/></button>
+              </div>
+            </div>
+            <div class="card__item">
+              <div class="card__image card__item_bef"><img class="card__img" src="./img/card_3.png" alt="card_3" srcset=""/></div>
+              <h4 class="card__title"> Home Luminary Refills Anjou Pear Spice</h4>
+              <div class="card__menu card__menu_mod">
+                <div class="card__price"><span class="price__new">$143.00</span><span class="price__old">$250.00</span></div>
+                <button class="card__reset button__link"><img class="card__resets image__card_button" src="./img/transfer.jpg" alt="trans" srcset=""/></button>
+                <button class="card__like button__link"><img class="card__likes image__card_button" src="./img/heart.jpg" alt="like" srcset=""/></button>
+                <button class="card__add button__link"><img class="card__adds image__card_button" src="./img/add.png" alt="add" srcset=""/></button>
+              </div>
+            </div>
+            <div class="card__item">
+              <div class="card__image"><img class="card__img" src="./img/card_4.png" alt="card_4" srcset=""/></div>
+              <h4 class="card__title"> Paddywax Fragrance Diffuser Set, Gardenia Tuberose</h4>
+              <div class="card__menu card__menu_mod">
+                <div class="card__price"><span class="price__new"> $173.00</span><span class="price__old"></span></div>
+                <button class="card__reset button__link"><img class="card__resets image__card_button" src="./img/transfer.jpg" alt="trans" srcset=""/></button>
+                <button class="card__like button__link"><img class="card__likes image__card_button" src="./img/heart.jpg" alt="like" srcset=""/></button>
+                <button class="card__add button__link"><img class="card__adds image__card_button" src="./img/add.png" alt="add" srcset=""/></button>
+              </div>
+            </div>
+            <div class="card__item">
+              <div class="card__image"><img class="card__img" src="./img/card_1.png" alt="card_1" srcset=""/></div>
+              <h4 class="card__title"> Febreze Air Effects New Zealand Springs</h4>
+              <div class="card__menu card__menu_mod">
+                <div class="card__price"><span class="price__new"></span><span class="price__old"></span></div>
+                <button class="card__reset button__link"><img class="card__resets image__card_button" src="./img/transfer.jpg" alt="trans" srcset=""/></button>
+                <button class="card__like button__link"><img class="card__likes image__card_button" src="./img/heart.jpg" alt="like" srcset=""/></button>
+                <button class="card__add button__link"><img class="card__adds image__card_button" src="./img/add.png" alt="add" srcset=""/></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="blocks">
+        <div class="container">
+          <div class="block_wraper">   
+            <div class="block">
+              <h3 class="block__title">About Us</h3>
+              <p class="block__text">Lorem ipsum, libero et luctus molestie, turpis mi sagittis nisl, a scelerisque leo nulla et lectus pendisse dictum posuere elit, in congue nisl varius quis lentesque a tellus eget quam varius aliquet.</p>
+              <p class="block__text">Pellentesque tristique, libero et luctus molestie, turpis mi sagittis nisl, a scelerisque leo nulla et lectus pendisse dictum posuere elit, in congue nisl varius quis lentesque a tellus eget quam varius aliquet.</p>
+              <p class="block__text">Vel lobortis gravida. Cursus in dapibus ultrices velit fusce. Felis lacus erat. </p>
+            </div>
+            <div class="block">
+              <h3 class="block__title">News</h3>
+              <div class="block_news"><span class="bloc__date">3 january 2012</span>
+                <p class="block__text block__text_blue">Fermentum parturient lacus tristique habitant nullam morbi et odio nibh mus dictum tellus erat.</p>
+              </div>
+              <div class="block_news"><span class="bloc__date">2 january 2012</span>
+                <p class="block__text block__text_blue">Cras ac hendrerit dui. Duis lacus ligula, luctus ac tristique eget, posuere id erat.</p>
+              </div>
+              <div class="block_news"><span class="bloc__date">2 january 2012</span>
+                <p class="block__text block__text_blue">Lorem ipsum, libero et luctus molestie, turpis mi sagittis nisl, a scelerisque leo nulla et lectus pendisse dictum posuere </p>
+              </div>
+            </div>
+            <div class="block">
+              <h3 class="block__title">Newsletter</h3>
+              <p class="block__text">Cursus in dapibus ultrices velit fusce. Felis lacus erat. Fermentum parturient lacus tristique habitant nullam morbi et odio nibh mus dictum tellus erat.</p>
+              <form class="block__form" name="test" method="post" action="">
+                <div class="block_form_item">
+                  <input class="block__email" type="text" placeholder="Enter your email address..."/>
+                  <button class="block__submit" type="submit"><img class="block__sub-img" src="./img/arrow.png" alt="arrow" srcset=""/></button>
+                </div>
+              </form>
+              <div class="block_email"><img class="block__open" src="./img/email_open.png" alt="mail" srcset=""/>
+                <p class="block__open-email">Vel lobortis gravida. Cursus in dapibus ultrices velit fusce. Felis lacus erat. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer_wrapper">
+          <div class="container">
+            <div class="footer_item">
+              <div class="footer__contacts footer_block">
+                <h2 class="footer__title">Contact Us</h2>
+                <ul class="footer__list footer__list_justi">
+                  <li class="footer__links"> 
+                    <address class="footer__to footer__to_image">49 Archdale, 2B Charleston  <img class="footer__img footer__img_size" src="./img/pin.jpg" alt="map" srcset=""/></address>
+                  </li>
+                  <li class="footer__links"><a class="footer__to footer__to_image footer__to" href="tel:+7771001234">+777 (100) 1234<img class="footer__img footer_img_opacity" src="./img/icon_phone.jpg" alt="" srcset=""/></a></li>
+                  <li class="footer__links"><a class="footer__to footer__to_image footer__to" href="mailto:mail@example.com">mail@example.com<img class="footer__img" src="./img/Email.jpg" alt="email" srcset=""/></a></li>
+                </ul>
+              </div>
+              <div class="footer__inform footer_block">
+                <h2 class="footer__title">Information</h2>
+                <ul class="footer__list">
+                  <li class="footer__links"><a class="footer__to" href="#">About Us   </a></li>
+                  <li class="footer__links"><a class="footer__to" href="#">Privacy Policy</a></li>
+                  <li class="footer__links"><a class="footer__to" href="#">Terms & Conditions</a></li>
+                  <li class="footer__links"><a class="footer__to" href="#"> Secure payment                          </a></li>
+                </ul>
+              </div>
+              <div class="footer__service footer_block">
+                <h2 class="footer__title"> Costumer Service                      </h2>
+                <ul class="footer__list">
+                  <li class="footer__links"><a class="footer__to" href="#">Contact Us  </a></li>
+                  <li class="footer__links"><a class="footer__to" href="#">Return </a></li>
+                  <li class="footer__links"><a class="footer__to" href="#">FAQ</a></li>
+                  <li class="footer__links"><a class="footer__to" href="#"> Site Map       </a></li>
+                </ul>
+              </div>
+              <div class="footer__account footer_block">
+                <h2 class="footer__title">My Account</h2>
+                <ul class="footer__list">
+                  <li class="footer__links"><a class="footer__to" href="#">My Account  </a></li>
+                  <li class="footer__links"><a class="footer__to" href="#">Order History</a></li>
+                  <li class="footer__links"><a class="footer__to" href="#">Wish List </a></li>
+                  <li class="footer__links"><a class="footer__to" href="#">Newsletter</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__topline">
+          <div class="container">
+            <div class="topline_wrapper"><span class="topline__copy">© Breeze Store Theme, 2012</span>
+              <div class="topline_icon"><a class="icon__link" href="#"><img class="icon__social" src="./img/facebook.png" alt="facebook" srcset=""/></a><a class="icon__link" href="#"><img class="icon__social" src="./img/twitter.png" alt="twitter" srcset=""/></a><a class="icon__link" href="#"><img class="icon__social" src="./img/google.png" alt="google" srcset=""/></a></div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--script(src="../../node_modules/slick-carousel/slick/slick.js")-->
+    <script src="./js/slick.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
