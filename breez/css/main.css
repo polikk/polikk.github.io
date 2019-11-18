@@ -1102,7 +1102,7 @@ table {
   .header .topline_lang {
     margin: 0; }
   .form_registration {
-    width: 50%; }
+    width: 50%!important; }
   .card__item {
     margin: 0 50px; }
   .hero_card {
@@ -1156,7 +1156,7 @@ table {
 
 @media (min-width: 320px) and (max-width: 399px) {
   .card__item {
-    margin: 0 50px; }
+    margin: 0 60px; }
   .topline_telephone {
     display: none; }
   .header .header__form {
