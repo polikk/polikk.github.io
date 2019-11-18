@@ -1104,7 +1104,7 @@ table {
   .header .topline_lang {
     margin: 0; }
   .form_registration {
-    width: 50%!important; }
+    max-width: 65%!important; }
   .card__item {
     margin: 0 50px; }
   .hero_card {
