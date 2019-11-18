@@ -1099,6 +1099,8 @@ table {
     justify-content: space-around; } }
 
 @media (max-width: 757px) {
+  .buttons {
+    width: 97%; }
   .header .topline_lang {
     margin: 0; }
   .form_registration {
@@ -1133,6 +1135,8 @@ table {
     background-size: 100% 15px,100% 160px; } }
 
 @media (max-width: 582px) {
+  .buttons {
+    width: 96%; }
   .header .header__acount {
     max-width: 100%;
     flex-wrap: wrap;
@@ -1145,6 +1149,8 @@ table {
     margin-top: 20px; } }
 
 @media (min-width: 400px) and (max-width: 476px) {
+  .buttons {
+    width: 95%; }
   .card__item {
     margin: 0 100px; }
   .topline_telephone {
@@ -1155,6 +1161,8 @@ table {
     max-width: 150px; } }
 
 @media (min-width: 320px) and (max-width: 399px) {
+  .buttons {
+    width: 95%; }
   .card__item {
     margin: 0 60px; }
   .topline_telephone {
