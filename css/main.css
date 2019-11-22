@@ -275,8 +275,7 @@ table {
       color: #0f9ebb;
       margin: 0 0 0 10px;
       font-size: 24px; }
-  .footer .private {
-    display: none; }
+  
 
 @media (max-width: 1000px) {
   .work__list {
@@ -302,6 +301,8 @@ table {
     width: 80%; } }
 
 @media (max-width: 500px) {
+  .footer .private {
+    display: none; }
   .about_wrap {
     padding: 25px 30px; }
   .aside {
