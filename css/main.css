@@ -248,7 +248,7 @@ table {
     min-height: 220px; }
 
 .footer {
-  padding: 40px;
+  padding: 40px 0;
   background: #acb0b1; }
   .footer__container {
     display: flex;
@@ -276,8 +276,7 @@ table {
       margin: 0 0 0 10px;
       font-size: 24px; }
   .footer .private {
-    color: #404749;
-    font-size: 18px; }
+    display: none; }
 
 @media (max-width: 1000px) {
   .work__list {
@@ -303,6 +302,8 @@ table {
     width: 80%; } }
 
 @media (max-width: 500px) {
+  .about_wrap {
+    padding: 25px 30px; }
   .aside {
     width: 90%; }
   .about {
