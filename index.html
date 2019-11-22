@@ -5,31 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <link rel="stylesheet" href="./css/main.css"/>
-    <title>Document</title>
+    <title>GitPages</title>
   </head>
   <body>
-    <section class="header">
-      <div class="container"><span class="header_about header_text">portfolio</span><span class="header_autor header_text">myroslav polishchyk</span><span class="header_desq header_text">< web developer / ></span>
-        <div class="header_button"><a class="header_link" href="#work">
-             <i class="fas fa-chevron-down"></i></a></div>
-      </div>
-    </section>
-    <section class="work" id="work">
+    <section class="hero">
       <div class="container">
-        <div class="work_card"><a class="work_card_link" href="/multi"><img class="work_card_img" src="../img/download.jpg" alt="" srcset=""/></a></div>
-        <div class="work_card"><a class="work_card_link" href="/hub2"><img class="work_card_img" src="../img/hub2.jpg" alt="" srcset=""/></a></div>
-        <div class="work_card"><a class="work_card_link" href="/about"><img class="work_card_img" src="../img/about.jpg" alt="" srcset=""/></a></div>
-        <div class="work_card"><a class="work_card_link" href="/webApp"><img class="work_card_img" src="../img/webApp.jpg" alt="" srcset=""/></a></div>
-        <div class="work_card"><a class="work_card_link" href="/tablets"><img class="work_card_img" src="../img/tablets.png" alt="" srcset=""/></a></div>
-        <div class="work_card"><a class="work_card_link" href="/list"><img class="work_card_img" src="../img/tablets.png" alt="" srcset=""/></a></div>
+        <div class="wrapper">
+          <aside class="aside">
+            <div class="aside_wrap">
+              <h1 class="aside__title">Junior front-end developer</h1>
+              <div class="aside__item">
+                <h3 class="aside__second-title">Освіта</h3><span class="aside__date">2019</span><span class="aside__text">Диплом Бакалавра НТУУ КПІ факультет ФІОТ, програмна інженерія</span>
+              </div>
+            </div>
+            <div class="aside_wrap">
+              <div class="aside__item">
+                <h3 class="aside__second-title aside__second-subtitle_color">skills</h3>
+              </div>
+              <div class="aside__item">
+                <h4 class="aside__second-subtitle">html5</h4>
+                <div class="aside__mini"><span class="aside__element"></span><span class="aside__element"></span><span class="aside__element"></span><span class="aside__element"></span><span class="aside__element"></span></div>
+              </div>
+              <div class="aside__item">
+                <h4 class="aside__second-subtitle">css3</h4>
+                <div class="aside__mini"><span class="aside__element"></span><span class="aside__element"></span><span class="aside__element"></span><span class="aside__element"></span><span class="aside__element"></span></div>
+              </div>
+              <div class="aside__item">
+                <h4 class="aside__second-subtitle">JavaScript</h4>
+                <div class="aside__mini aside__mini_mod"><span class="aside__element"></span><span class="aside__element"></span><span class="aside__element"></span><span class="aside__element"></span><span class="aside__element"></span></div>
+              </div>
+            </div>
+            <div class="aside_wrap">
+              <h3 class="aside__second-title">Професійні навички</h3>
+              <div class="aside__item">  <span class="aside__text"> При роботі використовував:  </span>
+                <ul class="aside__ul">
+                  <li class="aside__roster aside__text"> LESS/SAAS/SCSS </li>
+                  <li class="aside__roster aside__text"> JavaScript/JQuery</li>
+                  <li class="aside__roster aside__text">  Gulp/Webpack/Git</li>
+                  <li class="aside__roster aside__text">Bootstrap/Materialize</li>
+                  <li class="aside__roster aside__text">   Figma/Photoshop/Adobe XD/Avocode/VSCode</li>
+                </ul>
+              </div>
+            </div>
+          </aside>
+          <div class="about">
+            <div class="about_wrap about_wrap_flex"><img class="about_img" src="./img/man.svg" alt=""/>
+              <div class="about_information">
+                <h2 class="about__title about__title_mod">мирослав поліщук</h2>
+              </div>
+            </div>
+            <div class="about_wrap">
+              <h2 class="about__title">Про себе</h2>
+              <p class="about__text"> Займатися в сфері почав пів року тому.Мені 21 рік, продовжую навчання в КПІ на магістра. Знайомий з  принципами юзабіліті сайтів, досвід візуалізації і проектування призначених для користувача інтерфейсів. Комерційного досвіду не маю, створював тільки лендінги для свого порфоліо, також в курсових та дипломному проекту створював та візуалізував свій продукт. Для збірки використовую Gulp, конфігурацію якого налаштовував під себе. </p>
+            </div>
+            <div class="about_wrap">
+              <h2 class="about_subtitle">Особисті якості</h2>
+              <p class="about__text">відповідальність, комунікабельність, ініціативність, пунктуальність, акуратність, скрупульозність.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <section class="footer">
+    <section class="work">
       <div class="container">
-        <div class="footer_social"><span class="footer_link" href="#">
-            @pollikk<i class="fab fa-telegram-plane"></i></span><span class="footer_link" href="#">
-            polikigor@ukr.net<i class="far fa-envelope"></i></span></div>
+        <div class="work__item">
+          <div class="work__list"><a class="work__link" href="/multi"><img class="work__img" src="./img/xd.jpg" alt="xd" srcset=""/></a></div>
+          <div class="work__list"><a class="w_listork__link" href="/hub2"><img class="work__img" src="./img/exe.jpg" alt="exe" srcset=""/></a></div>
+          <div class="work__list"><a class="work__link" href="/about"><img class="work__img" src="./img/there.jpg" alt="there" srcset=""/></a></div>
+          <div class="work__list"><a class="work__link" href="/webApp"><img class="work__img" src="./img/yellow.jpg" alt="yellow" srcset=""/></a></div>
+          <div class="work__list"><a class="work__link" href="/tablets"><img class="work__img" src="./img/miko.jpg" alt="miko" srcset=""/></a></div>
+          <div class="work__list"><a class="work__link" href="/breez"><img class="work__img" src="./img/breez.jpg" alt="breez" srcset=""/></a></div>
+        </div>
       </div>
     </section>
-  </body><script src="https://kit.fontawesome.com/d34cefaeda.js" crossorigin="anonymous"></script>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="private footer__bloc">© 2019 Всі права захищено.</div>
+        <div class="contact footer_block"> <a class="contact__link" href="https://web.telegram.org/#/im?p=g214553413">
+            @pollikk<i class="fab fa-telegram-plane"></i></a><a class="contact__link" href="mailto:polikigor@ukr.net">
+            polikigor@ukr.net<i class="fas fa-envelope"></i></a></div>
+      </div>
+    </footer>
+    <script src="https://use.fontawesome.com/releases/v5.11.2/js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
 </html>
