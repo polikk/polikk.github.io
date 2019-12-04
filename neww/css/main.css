@@ -1099,7 +1099,7 @@ table {
     margin: 0; }
   .header .header__title {
     position: absolute;
-    top: -155%;
+    top: -175%;
     left: 50%;
     font-size: 45px;
     transform: translateX(-50%); }
