@@ -36,14 +36,6 @@ $(".close").click(function (e) {
     $(".pop-ap").removeClass("activiti");
   }
 });
-$(".pop-ap").mouseup(function (e) {
-  var div = $("#video");
-  var pop = $(".pop-ap");
-
-  if (!div.is(e.target) && div.has(e.target).length === 0) {
-    $(".pop-ap").removeClass("activiti");
-  }
-});
 $(".header__link").click("a", function (e) {
   $(".burger_btn").removeClass("active");
   $(".header_nav").removeClass("show");
