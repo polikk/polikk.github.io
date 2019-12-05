@@ -18,7 +18,7 @@ $(".buton_to-pop").click(function (e) {
 
   if ($(".buton_to-pop").hasClass("hover")) {
     $(".pop-ap").toggleClass("activiti");
-    document.getElementById("video").src = "https://www.youtube.com/embed/6f7pgA0riU8";
+    document.getElementById("video").src = "https://www.youtube.com/embed/nA9M7H7DDCk";
   } else {
     document.getElementById("video").src = "";
   }
@@ -30,7 +30,7 @@ $(".close").click(function (e) {
 
   if ($(".close").hasClass("active_btn")) {
     $(".pop-ap").toggleClass("activiti");
-    document.getElementById("video").src = "https://www.youtube.com/embed/6f7pgA0riU8";
+    document.getElementById("video").src = "https://www.youtube.com/embed/nA9M7H7DDCk";
   } else {
     document.getElementById("video").src = "";
     $(".pop-ap").removeClass("activiti");
