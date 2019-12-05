@@ -48,13 +48,13 @@ table {
 @font-face {
   font-family: "Circe-Regular";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 200;
   src: url("../fonts/Circe-Regular.ttf") format("truetype"); }
 
 @font-face {
   font-family: "Circe-Regular";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 800;
   src: url("../fonts/Circe-Bold.ttf") format("truetype"); }
 
 @font-face {
@@ -117,10 +117,11 @@ table {
     width: 80px;
     height: 80px; }
   .header .header__subtitle-text {
+    font-family: "Circe-Regular";
     max-width: 460px;
     width: 100%;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 22px;
     line-height: 36px;
     margin-left: 30px;
@@ -381,7 +382,8 @@ table {
   font-family: 'Circe-Regular'; }
   .statistic__text {
     margin-top: 30px;
-    margin-left: auto; }
+    margin-left: auto;
+    margin-right: 50px; }
   .statistic__title {
     font-style: normal;
     font-weight: 800;
@@ -493,7 +495,8 @@ table {
 
 .info {
   padding: 60px 0 60px;
-  background: linear-gradient(to bottom, #150433 50%, #30124E 50%);
+  background: linear-gradient(to bottom, #150433 35%, #30124E 0);
+  background-size: 100% 100%;
   font-family: 'Circe-Regular'; }
   .info_bloc {
     display: flex;
@@ -722,6 +725,12 @@ table {
   .why_bloc:last-child {
     padding: 40px 0; } }
 
+@media (min-height: 610px) and (max-width: 1290px) {
+  .header {
+    padding: 10px 0 0; }
+  .header .header_bottomline {
+    margin-top: 20px; } }
+
 @media (max-width: 1250px) {
   .subscription_item {
     justify-content: start; }
@@ -731,6 +740,11 @@ table {
     padding: 0 15px; } }
 
 @media (max-width: 980px) {
+  .info_item__subtitle {
+    margin-bottom: -50px; }
+  .choose__text {
+    margin: 30px auto;
+    text-align: left; }
   .header .header_topline {
     padding: 30px 0; }
   .header .header__title {
@@ -809,6 +823,8 @@ table {
     display: none; } }
 
 @media (max-width: 940px) {
+  .experience__text:last-child {
+    max-width: 450px; }
   .statistic {
     background: #150433; }
   .statistic__text {
@@ -1206,6 +1222,8 @@ table {
     right: -25px; } }
 
 @media (max-width: 350px) {
+  .statistic {
+    background-position: center 360px; }
   .header .header_img .buton_to-pop {
     bottom: 90px; }
   .header .header__subtitle-text {
