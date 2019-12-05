@@ -725,13 +725,17 @@ table {
   .why_bloc:last-child {
     padding: 40px 0; } }
 
-@media (min-width: 1400px) {
+@media (min-height: 900px) {
   .header .header_bottomline {
     margin-top: 140px; }
   .header {
     padding: 60px 0 0; } }
 
 @media (max-width: 1250px) {
+  .best__title.section_title::after {
+    bottom: -40%; }
+  .why_head__title {
+    margin-bottom: 0; }
   .subscription_item {
     justify-content: start; }
   .header .header_topline {
@@ -878,6 +882,8 @@ table {
     text-align: center; } }
 
 @media (max-width: 768px) {
+  .best__title.section_title::after {
+    bottom: -10%; }
   .container {
     padding: 0 20px; }
   .article-block .article_block__img {
@@ -985,7 +991,6 @@ table {
     font-size: 40px; }
   .info_item__title {
     margin-bottom: 20px;
-    margin: 0 auto;
     text-align: left; }
   .info_item__text {
     margin: 0 auto; }
