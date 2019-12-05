@@ -314,7 +314,7 @@ table {
     margin-bottom: 49px; }
 
 .section_title {
-  font-family: 'Circe-Regular';
+  font-family: 'Circe-ExtraBold';
   font-style: normal;
   font-weight: 800;
   font-size: 48px;
@@ -632,7 +632,7 @@ table {
   margin-top: 50px; }
 
 .why_bloc__title--green {
-  color: #00F0B5; }
+  color: #00F0F0; }
 
 .why_bloc__title--blue {
   color: #5E239D; }
