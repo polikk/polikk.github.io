@@ -76,7 +76,7 @@ table {
   background-image: url(../img/BG_header.jpg);
   background-size: cover;
   position: relative;
-  padding: 60px 0 0; }
+  padding: 20px 0 0; }
   .header .header_topline {
     display: flex;
     align-items: center;
@@ -97,7 +97,7 @@ table {
       text-decoration: none;
       color: #FFFFFF; }
   .header .header_bottomline {
-    margin-top: 140px;
+    margin-top: 40px;
     display: flex;
     align-items: center;
     justify-content: space-between; }
@@ -725,11 +725,11 @@ table {
   .why_bloc:last-child {
     padding: 40px 0; } }
 
-@media (min-height: 610px) and (max-width: 1290px) {
-  .header {
-    padding: 10px 0 0; }
+@media (min-width: 1400px) {
   .header .header_bottomline {
-    margin-top: 20px; } }
+    margin-top: 140px; }
+  .header {
+    padding: 60px 0 0; } }
 
 @media (max-width: 1250px) {
   .subscription_item {
@@ -795,7 +795,7 @@ table {
   .section_text {
     max-width: 450px; }
   .choose__title {
-    margin: 0 auto; }
+    text-align: left; }
   .header .header_bottomline {
     margin-top: 20px; }
   .experience_article {
@@ -823,6 +823,8 @@ table {
     display: none; } }
 
 @media (max-width: 940px) {
+  .contact .contact__title.section_title::after {
+    bottom: 15px; }
   .experience__text:last-child {
     max-width: 450px; }
   .statistic {
@@ -858,16 +860,15 @@ table {
     margin: 0 auto; }
   .contact {
     background: #150433;
-    padding: 10px 0; }
+    padding: 30px 0; }
   .contact__title {
-    margin: 0 auto;
     max-width: 600px;
     margin-bottom: 10px; }
   .section_title::after {
-    bottom: -10px; }
+    bottom: -15px; }
   .section_text.contact__text {
-    margin: 0 auto;
-    text-align: center; }
+    margin: 10px auto;
+    text-align: left; }
   .form {
     display: flex;
     flex-direction: column;
@@ -877,6 +878,12 @@ table {
     text-align: center; } }
 
 @media (max-width: 768px) {
+  .container {
+    padding: 0 20px; }
+  .article-block .article_block__img {
+    margin-top: -10px; }
+  .article-block .article-bloc__text {
+    margin-bottom: -10px; }
   .header .header_nav {
     display: none; }
   .show {
@@ -958,7 +965,7 @@ table {
   .statistic_bloc__text_bg::after {
     display: none; }
   .statistic__title {
-    text-align: center; }
+    text-align: left; }
   .statistic_bloc {
     flex-wrap: wrap;
     margin-bottom: 50px; }
@@ -974,6 +981,7 @@ table {
     flex-direction: column-reverse; }
   .info_item__subtitle {
     margin: 10px auto;
+    max-width: 410px;
     font-size: 40px; }
   .info_item__title {
     margin-bottom: 20px;
@@ -994,7 +1002,7 @@ table {
     max-width: 400px;
     margin-left: 10px; }
   .why_bloc__title {
-    text-align: center; }
+    text-align: left; }
   .why {
     padding: 20px 0; }
   .section_text {
@@ -1028,7 +1036,8 @@ table {
   .form .contact .form__submit {
     margin: 0 auto; }
   .experience_item .experience__title {
-    margin-bottom: 80px; } }
+    margin-bottom: 80px;
+    align-self: self-start; } }
 
 @media (max-width: 540px) {
   .header .btn {
@@ -1051,7 +1060,7 @@ table {
     margin-bottom: 350px; }
   .experience {
     background: url(../img/Expereince.jpg) no-repeat;
-    background-position: center 250px;
+    background-position: center 280px;
     background-size: 100% auto; }
   .experience_article:last-child {
     position: absolute;
@@ -1137,7 +1146,7 @@ table {
     max-height: 550px; }
   .experience {
     background: url(../img/Expereince.jpg) no-repeat;
-    background-position: center 250px;
+    background-position: center 220px;
     background-size: 100% auto; }
   .experience_article:last-child {
     position: absolute;
@@ -1169,8 +1178,8 @@ table {
     font-size: 20px; }
   .experience {
     background: url(../img/Expereince.jpg) no-repeat;
-    background-position: center 250px;
-    background-size: 100% auto; }
+    background-position: center 280px;
+    background-size: 100% 25%; }
   .experience_item .experience__title {
     margin-bottom: 350px; }
   .article-block:first-child {
@@ -1221,6 +1230,12 @@ table {
   .experience_article__text::after {
     right: -25px; } }
 
+@media (max-width: 380px) {
+  .header .header__subtitle-text {
+    font-size: 14px; }
+  .statistic_bloc__text {
+    font-size: 18px; } }
+
 @media (max-width: 350px) {
   .statistic {
     background-position: center 360px; }
@@ -1235,4 +1250,6 @@ table {
   .header .header_img .buton_to-pop {
     left: -30%; }
   .header .header__subtitle-text {
-    font-size: 18px; } }
+    font-size: 18px; }
+  .article-block .article-bloc__text {
+    margin-bottom: 0; } }
