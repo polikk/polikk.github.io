@@ -238,6 +238,57 @@ table {
   .btn:hover {
     box-shadow: 0px 25px 50px rgba(219, 19, 95, 0.31); }
 
+.pop-list.visibl {
+  visibility: visible;
+  overflow: hidden; }
+
+.pop-list {
+  position: fixed;
+  visibility: hidden;
+  max-width: 1100px;
+  width: 100%;
+  z-index: 800;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ffff;
+  box-shadow: -3px 0px 10px 8000px rgba(0, 0, 0, 0.5);
+  padding: 40px 20px 20px 20px; }
+  .pop-list__ul {
+    height: 60vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    list-style: none; }
+  .pop-list__item {
+    margin-top: 10px;
+    margin-left: 50px;
+    font-family: 'Circe-Regular'; }
+    .pop-list__item::before {
+      content: "\2022";
+      color: #F61067;
+      font-size: 25px;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em; }
+
+.pop-list__close {
+  width: 40px;
+  background-color: #C4C4C4;
+  height: 5px;
+  position: absolute;
+  z-index: 999;
+  top: 20px;
+  right: 0;
+  transform: rotate(45deg); }
+  .pop-list__close:after {
+    content: "";
+    width: 40px;
+    background-color: #C4C4C4;
+    height: 5px;
+    position: absolute;
+    transform: rotate(92deg); }
+
 .article {
   padding: 50px 0 0 0;
   background: linear-gradient(to right, #FFFFFF 50%, #30124E 50%);
@@ -1028,8 +1079,6 @@ table {
     font-size: 22px; }
   .subscription_head {
     padding: 40px 0; }
-  .btn.header__button {
-    display: none; }
   .contact__title {
     padding: 40px 0;
     max-width: 600px;
@@ -1050,7 +1099,7 @@ table {
   .header .header_img .buton_to-pop {
     font-size: 16px;
     top: inherit;
-    bottom: 0;
+    bottom: 80px;
     left: -110%; }
   .header .header_img .buton_to-pop .button_to-pop__img {
     margin-bottom: 5px; }
@@ -1124,10 +1173,12 @@ table {
     font-size: 104px; } }
 
 @media (max-width: 460px) {
+  .pop-list {
+    top: 20%; }
   .activiti {
     top: 35%; }
   .header .header_img .buton_to-pop {
-    bottom: 70px;
+    bottom: 120px;
     flex-direction: row;
     left: -40%; }
   .header .header_img .buton_to-pop .button_to-pop__img {
@@ -1242,10 +1293,12 @@ table {
     font-size: 18px; } }
 
 @media (max-width: 350px) {
+  .header .header_button .header__button {
+    padding: 15px 25px; }
   .statistic {
     background-position: center 360px; }
   .header .header_img .buton_to-pop {
-    bottom: 90px; }
+    bottom: 150px; }
   .header .header__subtitle-text {
     margin-top: -300px; }
   .header {

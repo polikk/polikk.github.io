@@ -46,3 +46,11 @@ $(".header__link").click("a", function (e) {
     scrollTop: top
   }, 1500);
 });
+$('.header__button').click(function (e) {
+  e.preventDefault();
+  $('.pop-list').toggleClass("visibl");
+  $('.pop-list__close').click(function (e) {
+    e.preventDefault();
+    $('.pop-list').removeClass('visibl');
+  });
+});
