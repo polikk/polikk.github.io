@@ -636,13 +636,15 @@ table {
   .about__btn {
     bottom: 500px; }
   .for-wrap {
-    margin-top: 0px; } }
+    margin-top: 0px; }
+  .for__title {
+    margin: 70px 0 30px; } }
 
 @media (max-width: 400px) {
   .header .page {
     right: 40%; }
     .header .page::after {
-      bottom: -220%; }
+      bottom: -200%; }
   .hero-info {
     margin-top: 80px; }
   .design-about {
