@@ -644,7 +644,7 @@ table {
   .header .page {
     right: 40%; }
     .header .page::after {
-      bottom: -200%; }
+      bottom: -240%; }
   .hero-info {
     margin-top: 80px; }
   .design-about {
@@ -662,4 +662,4 @@ table {
   .for-picture {
     top: 10px; }
   .for__title {
-    margin: 50px 0 30px; } }
+    margin: 70px 0 30px; } }
