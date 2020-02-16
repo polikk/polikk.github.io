@@ -1557,11 +1557,20 @@ table {
   .footer-bottom__wrap {
     justify-content: center; } }
 
+@media (max-width: 450px) {
+  .tab-card--border {
+    width: 300px; }
+  .work-wrap {
+    justify-content: center;
+    flex-direction: column; }
+    .work-wrap .work-item {
+      border: none; } }
+
 @media (max-width: 380px) {
   .active .portfolio__img {
     width: 100%;
     max-width: 500px;
-    max-height: 370px; }
+    max-height: 270px; }
   .footer-top__link {
     margin: 10px 0 10px 0; }
   .blog-article-item__img {
