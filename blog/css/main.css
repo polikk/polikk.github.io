@@ -1559,12 +1559,31 @@ table {
 
 @media (max-width: 450px) {
   .tab-card--border {
-    width: 300px; }
+    width: 390px; }
   .work-wrap {
     justify-content: center;
     flex-direction: column; }
     .work-wrap .work-item {
-      border: none; } }
+      border: none; }
+  .portfolio-item {
+    min-height: 300px; }
+  .clik {
+    padding: 20px 0; }
+  .team-item {
+    margin: 10px 0; }
+  .get-info-link--phone {
+    margin-left: 0; }
+  .footer-top__link {
+    margin: 10px 0; }
+  .active .portfolio__img {
+    height: 350px; }
+  .btn-close {
+    top: 120px;
+    right: 20px; }
+  .hero-link {
+    margin: 20px 0 !important; }
+  .get-info {
+    margin-left: 15px; } }
 
 @media (max-width: 380px) {
   .active .portfolio__img {
