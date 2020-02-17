@@ -1558,6 +1558,9 @@ table {
     justify-content: center; } }
 
 @media (max-width: 450px) {
+.blog-article-item__img{
+min-height:100%;
+}		
   .tab-card--border {
     width: 390px; }
   .work-wrap {
