@@ -284,7 +284,7 @@ main {
     color: #000000;
     font-size: 20px; }
   .award .awards {
-    width: 30.3%; }
+    width: 33.3%; }
     .award .awards:last-child .awards__text {
       border-right: none; }
     .award .awards__title {
@@ -292,10 +292,11 @@ main {
       font-size: 65px;
       color: #C4C4C4;
       text-align: center;
-      margin-bottom: 20px;
       max-width: 335px;
-      width: 100%; }
+      width: 100%;
+      margin: 20px auto; }
     .award .awards__text {
+      margin: 0 auto;
       padding-right: 30px;
       max-width: 335px;
       width: 100%;
@@ -566,6 +567,8 @@ main {
 
 .about-press {
   padding: 50px 0; }
+  .about-press .container {
+    padding: 0 90px; }
   .about-press .section-title {
     color: #000000;
     text-align: center; }
