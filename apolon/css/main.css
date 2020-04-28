@@ -284,21 +284,37 @@ main {
     color: #000000;
     font-size: 20px; }
   .award .awards {
-    width: 33.3%; }
-    .award .awards:last-child .awards__text {
-      border-right: none; }
+    max-width: 335px; }
+    .award .awards:nth-child(2) .awards__text:after {
+      content: '';
+      display: block;
+      width: 155px;
+      height: 1px;
+      background-color: #848181;
+      transform: rotate(90deg);
+      position: absolute;
+      top: 75px;
+      right: -110px; }
+    .award .awards:nth-child(2) .awards__text::before {
+      content: '';
+      display: block;
+      width: 155px;
+      height: 1px;
+      background-color: #848181;
+      transform: rotate(90deg);
+      position: absolute;
+      top: 75px;
+      left: -110px; }
     .award .awards__title {
       font-family: 'Gilroy-Bold';
       font-size: 65px;
       color: #C4C4C4;
       text-align: center;
-      max-width: 335px;
       width: 100%;
       margin: 20px auto; }
     .award .awards__text {
       margin: 0 auto;
-      padding-right: 30px;
-      max-width: 335px;
+      padding: 0 15px;
       width: 100%;
       color: #848181;
       font-family: 'Gilroy-Regular';
@@ -306,16 +322,6 @@ main {
       text-align: center;
       line-height: 29px;
       position: relative; }
-      .award .awards__text:after {
-        content: '';
-        display: block;
-        width: 155px;
-        height: 1px;
-        background-color: #848181;
-        transform: rotate(90deg);
-        position: absolute;
-        top: 75px;
-        right: -70px; }
   .award .section-title {
     color: #000000;
     text-align: center; }
@@ -592,7 +598,7 @@ main {
       background-color: #848181;
       margin: 25px auto; }
     .about-press .press-slider__card blockquote {
-      margin: 0 10px;
+      margin: 0 30px;
       width: 270px;
       padding: 12px 10px;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
@@ -660,6 +666,7 @@ main {
   .about-famous .slick-slide.slick-current.slick-active.slick-center .famous-card {
     height: 320px; }
   .about-famous .slick-slide.slick-current.slick-active.slick-center blockquote {
+    margin-left: -80px;
     height: 300px;
     position: absolute;
     background-color: #FFFFFF;
@@ -722,7 +729,7 @@ main {
       content: url(../img/left.svg); }
   .about-famous .slick-next {
     top: 350px;
-    right: 500px; }
+    right: 520px; }
     .about-famous .slick-next::before {
       content: url(../img/right.svg); }
 
